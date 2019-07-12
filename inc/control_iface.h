@@ -116,5 +116,7 @@ int8_t npnt_init_handle(npnt_s *handle);
 
 int8_t npnt_verify_permart(npnt_s *handle);
 
+int8_t npnt_check_authenticity(npnt_s *handle, uint8_t* raw_data, uint16_t raw_data_len, const uint8_t* signature, uint16_t signature_len);
+
 /** @} */
 #endif //CONTROL_IFACE_H

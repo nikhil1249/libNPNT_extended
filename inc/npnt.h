@@ -12,7 +12,6 @@
  * @{
  */
 #include <defines.h>
-#include <security_iface.h>
 #include "control_iface.h"
 #include <stdbool.h>
 

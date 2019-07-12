@@ -2,13 +2,11 @@
 #include <openssl/err.h>
 #include <openssl/ec.h>
 #include <openssl/pem.h>
-#include <inc/npnt_internal.h>
 #include <jsmn/jsmn.h>
 #include <mxml/mxml.h>
-#include <npnt.h>
+#include <inc/npnt_internal.h>
 #include <stdbool.h>
 #include <control_iface.h>
-#include <testclass.h>
 #include <QDir>
 
 #define ECCTYPE    "secp521r1"
@@ -322,7 +320,7 @@ int16_t load_artifact()
     return ret;
 }
 
-int main(char *argc,char **argv)
+int main()
 {
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
